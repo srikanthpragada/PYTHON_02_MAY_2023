@@ -3,7 +3,7 @@
 total_len = count = 0
 while True:
     name = input("Enter name [end to stop] :")
-    if name == 'end':
+    if name.upper() == 'END':
         break
 
     total_len += len(name)
