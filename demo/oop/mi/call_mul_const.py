@@ -2,7 +2,6 @@ class A:
     def __init__(self, p1):
         self.p1 = p1
 
-
 class B:
     def __init__(self, p2):
         self.p2 = p2
