@@ -20,3 +20,6 @@ and they lived at the bottom of a well.</p>
 bs = BeautifulSoup(html_doc, 'html.parser')
 print(bs.title.text)
 print(bs.p['class'])
+
+for t in bs.find_all("a"):
+    print(t.attrs)
