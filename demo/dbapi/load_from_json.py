@@ -13,7 +13,8 @@ count = 0
 for emp in employees:
     try:
         cur.execute("insert into employees(fullname,job,salary) values(?,?,?)",
-                (emp['name'], emp['job'], emp['salary']))
+                   (emp['name'], emp['job'], emp['salary']))
+                   # tuple(emp.values())
         count += 1
     except Exception as ex:
         print("Error : ", ex)
